@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context="com.example.rxbro.funwithimages.MainActivity">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+    <Button
+        android:id="@+id/btnCrop"
+        android:text="Crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/ivImage"
+        android:layout_alignLeft="@+id/ivImage"
+        android:layout_alignStart="@+id/ivImage" />
+    <Button
+        android:id="@+id/btnRotate"
+        android:text="Rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnFit"
+        android:layout_alignBottom="@+id/btnFit"
+        android:layout_alignLeft="@+id/btnResize"
+        android:layout_alignStart="@+id/btnResize" />
+    <Button
+        android:id="@+id/btnFit"
+        android:text="Fit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/btnCrop"
+        android:layout_alignLeft="@+id/btnCrop"
+        android:layout_alignStart="@+id/btnCrop" />
+    <Button
+        android:id="@+id/btnResize"
+        android:text="Resize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCrop"
+        android:layout_alignBottom="@+id/btnCrop"
+        android:layout_alignRight="@+id/ivImage"
+        android:layout_alignEnd="@+id/ivImage" />
+
+    <Button
+        android:id="@+id/btnFunny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Funny!"
+        android:layout_below="@+id/btnFit"
+        android:layout_alignStart="@+id/btnFit" />
+
+    <Button
+        android:id="@+id/btnPlaceHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnFunny"
+        android:layout_alignBottom="@+id/btnFunny"
+        android:layout_alignStart="@+id/btnRotate"
+        android:text="Place Holder" />
+
+
+</RelativeLayout>
